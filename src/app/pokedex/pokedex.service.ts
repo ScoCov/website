@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PokedexService {
-  private POKEDEX_API_URL: string = 'https://pokeapi.co/api/v2/pokemon/?limit=1010';
+  private POKEDEX_API_URL: string = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1010';
 
   constructor(private _http: HttpClient) { }
 

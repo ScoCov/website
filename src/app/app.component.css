@@ -1,4 +1,14 @@
-
 .content-wrapper {
+  position: relative;
+  width: 92.5%;
+  top: 5.5rem;
   padding: 1rem;
+  overflow-x: hidden;
+}
+app-banner {
+  position: fixed;
+  top:0;
+  height: 10%;
+  width: 100%;
+  z-index: 666;
 }

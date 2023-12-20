@@ -1,0 +1,63 @@
+.poke-card {
+  position: relative;
+  display: flex;
+  background: lightsteelblue;
+  border: 0.01rem solid steelblue;
+  border-radius: 5%;
+  margin-bottom: 1rem;
+}
+
+.poke-card:first{
+  margin-top: 10rem;
+}
+
+.image-wrapper {
+  margin: 0.5rem;
+  border-radius: 5%;
+  border: 0.01rem solid steelblue;
+  background: white;
+}
+
+.official-artwork {
+  height: 10rem;
+}
+
+.poke-name {
+  position: absolute;
+  top: 0;
+}
+
+
+.view-link {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.name-wrapper>p{
+  position: absolute;
+  top: 1.5rem;
+}
+
+.poke-card-wrapper{
+  position:relative;
+  overflow-y: scroll;
+}
+
+.pokedex-header-wrapper {
+  margin: -0.8rem;
+  padding: 0.5rem;
+  width: 100%;
+  left: 0.8rem;
+  z-index: 300;
+  background: white;
+}
+
+.pokedex-header-wrapper>h2{
+  margin-top: 0;
+}
+.pokedex-search-box {
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;;
+}
