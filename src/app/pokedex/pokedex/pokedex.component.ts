@@ -1,3 +1,5 @@
+import { Pokemon } from '../interfaces/pokemon';
+import { PokedexService } from './../pokedex.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pokedex.component.css']
 })
 export class PokedexComponent implements OnInit {
+  public pokemon!: {name: string, url: string}[];
 
-  constructor() { }
+  constructor(private _ps :PokedexService) { }
 
   ngOnInit(): void {
+    this._ps.getAllPokemon().subscribe((poke)=>{
+      this.pokemon= poke.results;
+    });
+
   }
 
 }

@@ -1,1 +1,6 @@
-<p>pokedex works!</p>
+<h2>Welcome to the PokeDex!</h2>
+<div class="poke-card" *ngFor="let poke of pokemon; index as id">
+  <h3>{{poke.name}}</h3>
+  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{{id}}.png">
+  <p>{{poke.url}}</p>
+</div>
