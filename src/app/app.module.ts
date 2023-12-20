@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ErrorModule } from './error/error.module';
+import { BannerModule } from './banner/banner.module';
+import { HomeModule } from './home/home.module';
+import { ResumeModule } from './resume/resume.module';
+import { PokedexModule } from './pokedex/pokedex.module';
+import { GamesModule } from './games/games.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +15,13 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ErrorModule,
+    BannerModule,
+    HomeModule,
+    ResumeModule,
+    PokedexModule,
+    GamesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
