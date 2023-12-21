@@ -26,7 +26,7 @@ export class PokedexComponent implements OnInit {
   onSearchInput(event: Event){
     this.search_term = (event.target as HTMLInputElement).value;
     this.filtered_pokemon = this.pokemon.filter(poke=>
-      poke.name.includes(this.search_term)
+      poke.name.includes(this.search_term.toLocaleLowerCase())
     );
     if (this.search_term === ''){
       this.filtered_pokemon = this.pokemon;
