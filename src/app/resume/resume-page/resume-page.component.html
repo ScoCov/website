@@ -1,1 +1,5 @@
-<p>resume-page works!</p>
+<h2>Work Experience</h2>
+<div class="work-experience-card" *ngFor="let job of work_experience">
+    <app-workexperience [work_experience]="job">
+    </app-workexperience>
+</div>

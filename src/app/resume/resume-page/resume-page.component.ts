@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ResumeService } from '../resume.service';
+import { Workexperience } from '../interfaces/workexperience';
 
 @Component({
   selector: 'app-resume-page',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume-page.component.css']
 })
 export class ResumePageComponent implements OnInit {
+  public work_experience!: Workexperience[];
 
-  constructor() { }
+  constructor(private resumeService: ResumeService) { }
 
   ngOnInit(): void {
+    this.work_experience = this.resumeService.getWorkExperience();
   }
 
 }
