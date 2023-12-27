@@ -1,5 +1,8 @@
 .main-image {
   width: 50%;
+  border: 0.02rem solid var(--clr-accent);
+  background-color: white;
+  border-radius: 2%;
 }
 
 .poke-name {
@@ -12,4 +15,10 @@
 
 .meta-stat{
   padding-left: 1rem;
+}
+
+
+.images-wrapper {
+  display: flex;
+  margin: 0;
 }
