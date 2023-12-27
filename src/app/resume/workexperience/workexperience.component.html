@@ -1,13 +1,17 @@
 <div class="work-exp-card">
+
   <div class="work-exp-header-wrapper">
+
     <div class="work-exp-title-name-wrapper">
-      <h3>{{work_experience.job_title}}</h3>
-      <h4>{{work_experience.company_name}} <sub>{{work_experience.company_location}}</sub></h4>
-      <p>{{work_experience.start_date}} - {{work_experience.end_date}}</p>
+      <h3 class="job-title">{{work_experience.job_title}}</h3>
+      <h4 class="company-name">{{work_experience.company_name}} <sub>{{work_experience.company_location}}</sub></h4>
+      <p class="start-end-dates">{{work_experience.start_date}} - {{work_experience.end_date}}</p>
     </div>
   </div>
+
+
   <div class="work-exp-body-wrapper">
-    <li *ngFor="let duty of duties;">
+    <li *ngFor="let duty of duties;" class="no-bullet">
       {{duty}}
     </li>
   </div>

@@ -4,6 +4,7 @@ export interface Pokedexresults {
   previous: string | null,
   results: {
     name: string,
-    url: string
+    url: string,
+    id?: string
   }[]
 }

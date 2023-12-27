@@ -9,14 +9,15 @@
 </div>
 
 <div class="poke-card-wrapper">
-  <div class="poke-card center" *ngFor="let poke of filtered_pokemon; index as id">
+  <div class="poke-card center" *ngFor="let poke of filtered_pokemon; index as id"
+  >
     <div class="image-wrapper">
-      <img class="official-artwork"
-      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{{poke.url.substring(poke.url.lastIndexOf('mon/')+3, poke.url.lastIndexOf('/'))}}.png">
+      <img class="official-artwork" (click)="goToPokemonDetails($event)"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{{poke.id}}.png">
     </div>
     <div class="name-wrapper">
       <h3 class="poke-name">{{poke.name.toLocaleUpperCase()}}</h3>
-      <p>PokeDex Entry: {{(id+1).toString().padStart(4,'0')}}</p>
+      <p>PokeDex Entry: {{poke.id?.padStart(4,'0')}}</p>
       <br>
       <a class="view-link">View Details</a>
     </div>

@@ -4,8 +4,12 @@
 }
 
 .nav-button {
-  background: white;
+  background: var(--clr-accent);
   border-radius: 5%;
   padding: 0.5rem;
   margin: 1rem;
+}
+
+.nav-button:hover {
+  background: var(--clr-hover-effect);
 }

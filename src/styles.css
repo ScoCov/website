@@ -2,11 +2,40 @@
 html, body {
   width: 100dvw;
   height: 100dvh;
+  background: var(--clr-background-primary);
+  color: var(--clr-text-primary);
   margin: 0;
   padding: 0;
 }
 
-center {
+.center {
   margin-left: auto;
   margin-right: auto;
 }
+
+.header-color {
+  color: var(--clr-text-primary)
+}
+
+.accent {
+  background: var(--clr-accent);
+}
+
+.accent-lite {
+  background: var(--clr-accent-lighter);
+}
+
+
+:root{
+  /*Chat GPT generate colors: */
+  /*Primary Colors*/
+  --clr-background-primary: #d9e4dd;/*Soft Blue*/
+  /*Secondary Colors*/
+  --clr-accent: #77a3ab; /*Teal blue: Buttons, links, etc*/
+  --clr-text-primary:  #001a1a; /*Rich black - for headers,etc*/
+  /*Tertiary Colors*/
+  --clr-hover-effect: #a9cdd5; /*Lighter Blue*/
+  --clr-accent-lighter: #a9cdd5; /*For further highlighting*/
+  --clr-header-footer: #334d4d ; /*Headers background, borders etc*/
+}
+

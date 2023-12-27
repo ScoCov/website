@@ -6,7 +6,7 @@ export const WORK_EXPERIENCE: Workexperience[] = [
     company_location: 'Tucson, Az',
     start_date: 'May 2022',
     end_date: 'September 2023',
-    job_title: 'Jr. Software Developer',
+    job_title: 'Software Developer',
     duties: [
       'Provided support to maintain legacy code, multiple languages and frameworks. Primarily C#, for our backend, and JavaScript/Typescript specific frameworks for our frontend.',
       'Collaborated with other developers using Agile methodologies.',
@@ -15,7 +15,7 @@ export const WORK_EXPERIENCE: Workexperience[] = [
       'Created responsive UIs utilizing the Angular Framework',
       'Develop strategies to improve efficiency of developing parts of the product.',
       'Migrated the database to the cloud, also changing its’ data base language.',
-      'Worked indecently of other developers, but would Collaborate with others to accomplish product owner’s requests when needed.',
+      'Worked independently of other developers, but would Collaborate with others to accomplish product owner’s requests when needed.',
     ]
   },
   {
@@ -27,7 +27,7 @@ export const WORK_EXPERIENCE: Workexperience[] = [
     duties: [
       'Assisted in projects by conducting meetings and providing technical expertise. ',
       'Collaborated with my team and developed the first monthly lessons related to software for the city employees due to increased remote workers. ',
-      'Conducted meetings with over 180 employees to collect data for new upcoming software distributed in their departments',
+      'Conducted meetings manys employees spanning multiple departments to collect data for new upcoming software distributed in their departments',
       'Developed spreadsheets to record the status of the meetings, the results, and if any further contact was made. ',
     ]
   },

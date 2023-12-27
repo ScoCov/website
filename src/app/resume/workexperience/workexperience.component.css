@@ -1,0 +1,33 @@
+.work-exp-card {
+  position: relative;
+  background: var(--clr-accent-lighter);
+  border: 0.02rem solid var(--clr-header-footer);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5%;
+  box-shadow: 0.1rem 0.1rem 5px;
+}
+
+
+.no-bullet {
+  list-style: none;
+  margin: 0.25rem;
+}
+
+.start-end-dates{
+  position: absolute;
+  bottom: -0.7rem;
+  right: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.company-name {
+  margin: 0;
+  text-indent: 1rem;;
+}
+
+.job-title {
+  margin: 0;
+  font-size: 1.2rem;
+}

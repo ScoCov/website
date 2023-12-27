@@ -1,0 +1,9 @@
+<h1 class="poke-name">{{pokemon?.name?.toLocaleUpperCase()}}</h1>
+<div class="summary-wrapper">
+  <img class="main-image" [src]="img_src">
+  <div class="meta-stat">
+    <p>ID: {{pokemon.id}}</p>
+    <p>Height: {{pokemon.height?.toLocaleString()}}</p>
+    <p>Weight: {{pokemon.weight?.toLocaleString()}}</p>
+  </div>
+</div>

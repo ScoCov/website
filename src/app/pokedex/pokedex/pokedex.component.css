@@ -1,8 +1,8 @@
 .poke-card {
   position: relative;
   display: flex;
-  background: lightsteelblue;
-  border: 0.01rem solid steelblue;
+  background: var(--clr-accent);
+  border: 0.01rem solid var(--clr-header-footer);
   border-radius: 5%;
   margin-bottom: 1rem;
 }
@@ -14,7 +14,7 @@
 .image-wrapper {
   margin: 0.5rem;
   border-radius: 5%;
-  border: 0.01rem solid steelblue;
+  border: 0.01rem solid var(--clr-accent-light);
   background: white;
 }
 
@@ -50,7 +50,7 @@
   width: 100%;
   left: 0.8rem;
   z-index: 300;
-  background: white;
+  background: var(--clr-background-primary);
 }
 
 .pokedex-header-wrapper>h2{

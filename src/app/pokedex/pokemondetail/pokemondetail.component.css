@@ -1,0 +1,15 @@
+.main-image {
+  width: 50%;
+}
+
+.poke-name {
+  text-align: center;
+}
+
+.summary-wrapper {
+  display: flex;
+}
+
+.meta-stat{
+  padding-left: 1rem;
+}

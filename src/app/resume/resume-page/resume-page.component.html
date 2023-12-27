@@ -3,3 +3,8 @@
     <app-workexperience [work_experience]="job">
     </app-workexperience>
 </div>
+<h2>Skills and Knowledge</h2>
+<div class="skill-card" *ngFor="let skill of skills">
+  <app-skills [skill]="skill">
+  </app-skills>
+</div>
