@@ -8,10 +8,16 @@ html, body {
   padding: 0;
 }
 
-.center {
-  margin-left: auto;
-  margin-right: auto;
+.center-content{
+  justify-content: center;
+  align-content: center;
 }
+
+.center-self{
+  justify-self: center;
+  align-self: center;
+}
+
 
 .header-color {
   color: var(--clr-text-primary)
@@ -25,6 +31,20 @@ html, body {
   background: var(--clr-accent-lighter);
 }
 
+.card-light {
+  background: var(--clr-accent-lighter);
+  border: 0.02rem solid var(--clr-header-footer);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5%;
+  box-shadow: 1px 1px 5px;
+  min-width: .1rem;
+  min-height: .1rem;
+  max-width: 80%;
+  max-height: 2rem;
+  width: fit-content;
+  height: fit-content;
+}
 
 :root{
   /*Chat GPT generate colors: */

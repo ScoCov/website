@@ -1,12 +1,3 @@
-.work-exp-card {
-  position: relative;
-  background: var(--clr-accent-lighter);
-  border: 0.02rem solid var(--clr-header-footer);
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 5%;
-  box-shadow: 0.1rem 0.1rem 5px;
-}
 
 
 .no-bullet {
