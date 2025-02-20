@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-html, body {
-  width: 100dvw;
-  height: 100dvh;
+body {
+  display: flex;
+  flex-direction: column;
   background: var(--clr-background-primary);
   color: var(--clr-text-primary);
   margin: 0;
@@ -16,19 +16,6 @@ html, body {
 .center-self{
   justify-self: center;
   align-self: center;
-}
-
-
-.header-color {
-  color: var(--clr-text-primary)
-}
-
-.accent {
-  background: var(--clr-accent);
-}
-
-.accent-lite {
-  background: var(--clr-accent-lighter);
 }
 
 .card-light {

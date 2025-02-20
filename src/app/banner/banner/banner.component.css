@@ -1,18 +1,14 @@
 .banner-wrapper {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   background: var(--clr-header-footer);
 }
 
-.website-title {
+.website-title{
+  color: lightgray;
   margin: 0;
-  text-align: center;
-}
-
-
-app-nav-bar {
-  position: absolute;
-  bottom: 1rem;
+  margin-bottom: 1rem;
 }
 

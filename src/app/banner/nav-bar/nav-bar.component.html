@@ -1,5 +1,5 @@
 <div class="navbar-wrapper">
-  <nav>
+  <div style="width: fit-content" class="center-self">
     <a
       class='nav-button'
       routerLink='/home'
@@ -10,7 +10,8 @@
     class='nav-button'
     routerLink='/resume'
     routerLinkActive="router-link-active"
-    (click)="goToResume()" > Resume </a>
+    (click)="goToResume()"
+    > Resume </a>
 
     <a
     class='nav-button'
@@ -23,5 +24,5 @@
     routerLink='/pokedex'
     routerLinkActive="router-link-active"
     (click)="goToPokeDex()" > PokeDex </a>
-  </nav>
+  </div>
 </div>

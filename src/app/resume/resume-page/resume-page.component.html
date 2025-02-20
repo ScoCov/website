@@ -1,7 +1,7 @@
 <div style="display: flex; flex-direction: column; ">
   <h2 class="center-self">Work Experience</h2>
   <p class="center-self" style="width: 30em;">This will not be my comprehensive resume. It will simply just be a list of my previous positions and some of my skills.</p>
-  <div class="center-self" style="width: 30rem;max-height: 20rem; overflow-y: scroll; ">
+  <div class="center-self scrolly" style="width: 30rem;max-height: 20rem; overflow-y: scroll; ">
 
     <div class="card-light center-self" *ngFor="let job of work_experience">
       <app-workexperience [work_experience]="job">
