@@ -1,18 +1,17 @@
 <div class="pokedex-header-wrapper">
-  <h2>Welcome to the PokeDex!</h2>
+  <h2 class="center-self">Welcome to the PokeDex!</h2>
   <input
   type="text"
-  class="pokedex-search-box"
+  class="pokedex-search-box center-self"
   #serachPokeDex
   (input)="onSearchInput($event)"
   placeholder="Search for a pokemon by name. (e.g. pikachu)">
 </div>
 
 <div class="poke-card-wrapper">
-  <div class="poke-card center" *ngFor="let poke of filtered_pokemon; index as id"
-  >
+  <div class="poke-card center" *ngFor="let poke of filtered_pokemon; index as id">
     <div class="image-wrapper">
-      <img class="official-artwork" (click)="goToPokemonDetails($event)"
+      <img class="official-artwork poke-img" (click)="goToPokemonDetails($event)"
       src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{{poke.id}}.png">
     </div>
     <div class="name-wrapper">
@@ -22,5 +21,4 @@
       <a class="view-link">View Details</a>
     </div>
   </div>
-
 </div>

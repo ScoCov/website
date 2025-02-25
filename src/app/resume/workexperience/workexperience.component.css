@@ -15,10 +15,14 @@
 
 .company-name {
   margin: 0;
-  text-indent: 1rem;;
+  text-indent: 1rem;
 }
 
 .job-title {
   margin: 0;
   font-size: 1.2rem;
+}
+
+.work-exp-header-wrapper{
+  height: 10rem;
 }

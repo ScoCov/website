@@ -9,6 +9,7 @@ body {
 }
 
 .center-content{
+  display:flex;
   justify-content: center;
   align-content: center;
 }
@@ -21,7 +22,7 @@ body {
 .card-light {
   background: var(--clr-accent-lighter);
   border: 0.02rem solid var(--clr-header-footer);
-  padding: 1rem;
+  padding: .5rem;
   margin: 1rem;
   border-radius: 5%;
   box-shadow: 1px 1px 5px;
