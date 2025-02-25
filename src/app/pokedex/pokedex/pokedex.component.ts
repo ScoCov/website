@@ -2,6 +2,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { PokedexService } from './../pokedex.service';
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-pokedex',
   templateUrl: './pokedex.component.html',
@@ -12,6 +13,7 @@ export class PokedexComponent implements OnInit {
   public filtered_pokemon!: {name:string, url:string, id?: string}[];
   public search_term: string = '';
   public pokemon_id!: string;
+  public columnCount: number = 1
 
   constructor(private _ps :PokedexService, private _router: Router) { }
 
@@ -37,9 +39,11 @@ export class PokedexComponent implements OnInit {
   }
 
   goToPokemonDetails(event: Event){
-    let target = (event.target as HTMLImageElement);
-    let id = target.src.substring(target.src.lastIndexOf('artwork/')+ 'artwork/'.length, target.src.lastIndexOf('.png'));
-    this._router.navigate(['pokedetail/', id]);
+    console.log(event)
+    let target = event.target as HTMLElement;
+    let tar = target.querySelector('.poke-img') as HTMLImageElement
+    let id = tar.src.substring(tar.src.lastIndexOf('artwork/')+ 'artwork/'.length, tar.src.lastIndexOf('.png'));
+    this._router.navigate(['pokedetail/', 1]);
   }
 
 }

@@ -1,0 +1,46 @@
+.image-wrapper {
+  display: flex;
+  margin: 0.2rem;
+  border-radius: 5px;
+  border: 0.01rem solid var(--clr-accent-light);
+  background: rgba(255, 255, 255, .8);
+}
+
+.poke-img{
+  min-width: none;
+  min-height: none;
+  height: 5rem;
+  aspect-ratio: 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.name-wrapper{
+  width: 100%;
+}
+
+.poke-name {
+  justify-self: center;
+  margin: 0px;
+  font-weight: bold;
+  margin-top: .2rem;
+}
+
+.poke-card {
+  display: flex;
+  background: var(--clr-accent);
+  border: 0.01rem solid var(--clr-header-footer);
+  border-radius: 5px;
+  width: 20rem;
+  margin: 0.1rem
+}
+
+.poke-card:hover{
+  transform: scale(1.05);
+  box-shadow: 1px 1px .5;
+}
+
+.entry-number{
+  font-weight: normal
+}
+
