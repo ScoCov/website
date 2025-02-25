@@ -8,6 +8,13 @@ body {
   padding: 0;
 }
 
+.router-container{
+  display: flex;
+  min-width: 480;
+  width: fit-content;
+  max-width: 800px;
+}
+
 .center-content{
   display:flex;
   justify-content: center;

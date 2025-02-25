@@ -1,11 +1,3 @@
-/* .poke-card {
-  display: flex;
-  background: var(--clr-accent);
-  border: 0.01rem solid var(--clr-header-footer);
-  border-radius: 5px;
-  width: 20rem;
-  margin: 0.1rem
-} */
 
 .poke-card-wrapper{
   display: inline-flex;
@@ -16,11 +8,7 @@
 .pokedex-header-wrapper {
   display: flex;
   flex-direction: column;
-  margin: -0.8rem;
-  padding: 0.5rem;
   width: 100%;
-  left: 0.8rem;
-  z-index: 300;
   background: var(--clr-background-primary);
 }
 
@@ -30,4 +18,8 @@
   margin-bottom: 1rem;
   border-radius: 5px;
   border: black 1px solid;
+}
+
+.poke-filter{
+  display: flex;
 }

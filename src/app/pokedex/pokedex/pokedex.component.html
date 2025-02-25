@@ -1,24 +1,22 @@
-<div class="pokedex-header-wrapper">
+<div class="pokedex-header-wrapper center-self">
   <h2 class="center-self">Welcome to the PokeDex!</h2>
-  <input
-  type="text"
-  class="pokedex-search-box center-self"
-  #serachPokeDex
-  (input)="onSearchInput($event)"
-  placeholder="Search for a pokemon by name. (e.g. pikachu)">
+  <div class="poke-filter center-self">
+    <fieldset class="center-self">
+      <legend>Filter</legend>
+      <p>Alpha Filter:</p>
+      <p class="center-self">A B C D E F G H I G K L M N O P Q R S T U V W X Y Z</p>
+      <p>Text Filter:</p>
+      <input
+      type="text"
+      class="pokedex-search-box center-self"
+      #serachPokeDex
+      (input)="onSearchInput($event)"
+      placeholder="Search for a pokemon by name. (example: pikachu)">
+    </fieldset>
+  </div>
 </div>
-
-<div class="poke-card-wrapper">
-  <div class="poke-card center" *ngFor="let poke of filtered_pokemon; index as id"  >
+<div class="poke-card-wrapper center-content">
+  <div class="poke-card" *ngFor="let poke of filtered_pokemon; index as id"  >
     <app-poke-card [poke]="poke" ></app-poke-card>
-    <!-- <div class="image-wrapper">
-      <img class="poke-img"
-      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{{poke.id}}.png">
-    </div>
-    <div class="name-wrapper">
-      <p class="poke-name">{{poke.name.toLocaleUpperCase()}}</p>
-      <p>PokeDex Entry: {{poke.id?.padStart(4,'0')}}</p>
-      <br>
-    </div> -->
   </div>
 </div>

@@ -6,6 +6,9 @@
   background: rgba(255, 255, 255, .8);
 }
 
+
+
+
 .poke-img{
   min-width: none;
   min-height: none;
@@ -38,6 +41,27 @@
 .poke-card:hover{
   transform: scale(1.05);
   box-shadow: 1px 1px .5;
+
+}
+
+.poke-card:hover>div>img{
+  animation-name: poke-wiggle;
+  animation-duration: .5s;
+}
+
+
+@keyframes poke-wiggle {
+  0%{
+    transform: scale(1)
+  }
+  50%{
+    transform: scale(1.05)
+  }
+
+
+  100%{
+    transform: scale(1)
+  }
 }
 
 .entry-number{
