@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 
 
+
 @Component({
   selector: 'app-projectpage',
   templateUrl: './projectpage.component.html',
@@ -17,8 +18,9 @@ export class ProjectpageComponent implements OnInit {
 
   ngOnInit(): void {
     this.projects = this._projectService.getProjects();
+    console.log(this.projects)
   }
   navTo(address: string){
-    this._router.navigate([`/`+address.toLocaleLowerCase()]);
+    this._router.navigate([`./`+address.toLocaleLowerCase()]);
   }
 }

@@ -1,0 +1,13 @@
+
+.project-wrapper {
+  display: flex;
+  background: var(--clr-accent);
+  border: 0.01rem solid var(--clr-header-footer);
+  border-radius: 5px;
+  width: 20rem;
+  margin: 0.1rem
+}
+.project-wrapper>div{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}

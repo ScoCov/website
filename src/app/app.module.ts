@@ -7,8 +7,8 @@ import { BannerModule } from './banner/banner.module';
 import { HomeModule } from './home/home.module';
 import { ResumeModule } from './resume/resume.module';
 import { PokedexModule } from './pokedex/pokedex.module';
-import { GamesModule } from './games/games.module';
 import { HttpClientModule } from '@angular/common/http'
+import { ProjectsModule } from './projects/projects.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { HttpClientModule } from '@angular/common/http'
     HomeModule,
     ResumeModule,
     PokedexModule,
-    GamesModule,
+    ProjectsModule,
     HttpClientModule
   ],
   providers: [],

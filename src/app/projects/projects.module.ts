@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Project } from './interfaces/project';
+import { CommonModule, NgFor, NgForOf } from '@angular/common';
 import { ProjectsRoutingModule } from './projects-routing.module';
 import { ProjectpageComponent } from './projectpage/projectpage.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 @NgModule({
@@ -10,7 +10,8 @@ import { ProjectpageComponent } from './projectpage/projectpage.component';
     ProjectpageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
   exports: [
     ProjectpageComponent

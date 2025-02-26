@@ -1,8 +1,4 @@
-<!-- <a
-    class='nav-button'
-    routerLink='/pokedex'
-    routerLinkActive="router-link-active"
-    (click)="navTo('pokedex')" > PokeDex </a> -->
+
 <div id="ProjectHeader">
   <h1>Projects</h1>
   <p>This page will contain either access to various projects or will contain a detailed
@@ -12,6 +8,17 @@
 
 <div id="ProjectContainer">
   <div *ngFor="let proj of projects">
-    poj
-  </div>
+    <div class="project-wrapper flex flex-horz center-self">
+      <div class="name-img-container flex flex-vert">
+        <p style="justify-self: center; align-self:self-start; text-decoration: underline;">{{proj.name}}</p>
+        <div style="width: 1rem; aspect-ratio: 1; background-color: black;" class="center-self"></div>
+      </div>
+      <div class="flex flex-vert">
+          <p style="margin-bottom: 0;">Description</p>
+          <p class="center-self">{{proj.description}}</p>
+      </div>
+      <a class="center-self" routerLink="/{{proj.url}}"
+        routerLinkActive="router-link-active" [hidden]="!proj.viewable"> View </a>
+      </div>
+    </div>
 </div>
