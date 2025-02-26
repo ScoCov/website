@@ -4,25 +4,19 @@
       class='nav-button'
       routerLink='/home'
       routerLinkActive="router-link-active"
-      (click)="goToHome()"> Home </a>
+      (click)="navTo('home')"> Home </a>
 
     <a
     class='nav-button'
     routerLink='/resume'
     routerLinkActive="router-link-active"
-    (click)="goToResume()"
+    (click)="navTo('resume')"
     > Resume </a>
 
     <a
     class='nav-button'
-    routerLink='/games'
+    routerLink='/projects'
     routerLinkActive="router-link-active"
-    (click)="goToGames()" > Games </a>
-
-    <a
-    class='nav-button'
-    routerLink='/pokedex'
-    routerLinkActive="router-link-active"
-    (click)="goToPokeDex()" > PokeDex </a>
+    (click)="navTo('projects')" > Projects </a>
   </div>
 </div>

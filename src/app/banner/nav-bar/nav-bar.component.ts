@@ -13,18 +13,9 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  goToHome() {
-    this._router.navigate(['/home']);
+  navTo(address: string){
+    this._router.navigate([`/`+address.toLocaleLowerCase()]);
   }
 
-  goToResume() {
-    this._router.navigate(['/resume']);
-  }
-  goToGames(){
-    this._router.navigate(['/games'])
-  }
-  goToPokeDex() {
-    this._router.navigate(['/pokedex']);
-  }
 
 }

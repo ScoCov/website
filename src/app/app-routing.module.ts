@@ -6,14 +6,16 @@ import { ResumePageComponent } from './resume/resume-page/resume-page.component'
 import { GamePageComponent } from './games/game-page/game-page.component';
 import { PokedexComponent } from './pokedex/pokedex/pokedex.component';
 import { PokemondetailComponent } from './pokedex/pokemondetail/pokemondetail.component';
+import { ProjectpageComponent } from './projects/projectpage/projectpage.component';
 
 const routes: Routes = [
   { path: '', title: 'Home', component: HomePageComponent},
   { path: 'home', title: 'Home', redirectTo: '', pathMatch: 'full'},
   { path: 'resume', title: 'Resume', component: ResumePageComponent},
-  { path: 'games', title: '', component: GamePageComponent},
+  // { path: 'games', title: '', component: GamePageComponent},
   { path: 'pokedex', title: '', component: PokedexComponent},
-  { path: 'pokedetail/:id', component: PokemondetailComponent}
+  { path: 'pokedetail/:id', component: PokemondetailComponent},
+  { path: 'projects', component: ProjectpageComponent}
 ];
 
 @NgModule({
