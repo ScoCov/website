@@ -1,22 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  display: flex;
-  flex-direction: column;
   background: var(--clr-background-primary);
   color: var(--clr-text-primary);
   margin: 0;
   padding: 0;
 }
 
-.router-container{
+.flex {
+  display: -webkit-flex;
+  display: -moz-flex;
   display: flex;
-  min-width: 480;
-  width: fit-content;
-  max-width: 800px;
 }
 
+.flex-vert {
+  flex-direction: column;
+}
+
+.flex-horz {
+  flex-direction: row;
+}
+
+
 .center-content{
-  display:flex;
   justify-content: center;
   align-content: center;
 }
