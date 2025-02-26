@@ -1,0 +1,23 @@
+#DescriptionContainer {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#ImageContainer {
+  min-width: 2rem;
+  width: 5rem;
+  max-width: 10%;
+}
+
+#ProjectCard {
+  background-color: var(--clr-accent);
+  margin: .3rem;
+  border: 2px solid var(--clr-accent-lighter);
+  border-radius: 5px;
+  padding: 0rem 1rem;
+}
+
+#ProjectCard:hover {
+  transform: scale(1.05);
+  box-shadow:  5px 5px 10px black;
+}

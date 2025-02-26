@@ -1,0 +1,26 @@
+<div id="ProjectCard" class="flex flex-vert">
+  <div id="Header">
+      <!-- TODO: Change the routerLink to the detailed page -->
+      <h3 class="center-self">
+        {{ project.name }}
+      </h3>
+  </div>
+  <div id="Body" class="flex flex-horz">
+    <div id="ImageContainer" class="center-content">
+      <img
+        style=" width: 1rem; aspect-ratio: 1"
+        class="center-self"
+        src=""
+      />
+    </div>
+    <div id="DescriptionContainer">
+      <p>Description</p>
+      <p>{{ project.description }}</p>
+    </div>
+    <div id="ControlContainer" class="center-content" *ngIf="project.viewable">
+      <p class="center-self"><a [routerLink]=routerLink routerLinkActive="router-link-active">
+        {{ project.accessText }}
+      </a></p>
+    </div>
+  </div>
+</div>

@@ -6,6 +6,7 @@ export const PROJECTS: Project[] = [
     description: "This project is meerly to demonstrate my acapabilities with API and UI/UX design. This project utilizes the pokedex api [insert website].",
     url: "pokedex",
     viewable: true,
+    accessText: "Navigate To Page"
    },
    {
     name:"OldSchool Runescape Calculator",

@@ -5,9 +5,14 @@
   border: 0.01rem solid var(--clr-header-footer);
   border-radius: 5px;
   width: 20rem;
-  margin: 0.1rem
+  margin: 0.1rem;
+  padding: 0.2rem;
 }
 .project-wrapper>div{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.name-img-container {
+  min-width: 4em;
 }

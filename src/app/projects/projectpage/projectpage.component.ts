@@ -18,9 +18,6 @@ export class ProjectpageComponent implements OnInit {
 
   ngOnInit(): void {
     this.projects = this._projectService.getProjects();
-    console.log(this.projects)
   }
-  navTo(address: string){
-    this._router.navigate([`./`+address.toLocaleLowerCase()]);
-  }
+
 }
