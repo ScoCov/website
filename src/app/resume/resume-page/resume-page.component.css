@@ -6,3 +6,10 @@
   scrollbar-width: .2rem;
   scrollbar-color: var(--clr-accent);
 }
+
+.education-card{
+  background-color: var(--clr-accent);
+  padding: 0.2rem 1rem;
+  border: .2rem solid var(--clr-accent-lighter);
+  border-radius: 5px;
+}

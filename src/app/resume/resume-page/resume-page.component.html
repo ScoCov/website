@@ -2,6 +2,14 @@
   <h2 class="center-self">Work Experience</h2>
   <p class="center-self">This will not be my comprehensive resume. It will simply just be a list of my previous positions and some of my skills.</p>
   <div class="center-self "style="width: 100%; ">
+    <div class="education-card center-self">
+      <h5 class="center-self">{{education.degree_title}}</h5>
+      <h4 class="center-self">{{education.degree_major}}</h4>
+      <p class="center-self"><a href="https://www.ecpi.edu/">
+        {{education.institution}}
+      </a>
+    </p>
+    </div>
     <div class="card-light center-self" *ngFor="let job of work_experience">
       <app-workexperience [work_experience]="job">
       </app-workexperience>
