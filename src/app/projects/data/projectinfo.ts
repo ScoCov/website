@@ -3,14 +3,14 @@ import { Project } from "../interfaces/project";
 export const PROJECTS: Project[] = [
   {
     name:"PokeDex",
-    description: "This project is meerly to demonstrate my acapabilities with API and UI/UX design. This project utilizes the pokedex api [insert website].",
+    description: "This project is meerly to demonstrate my capabilities with API and UI/UX design. There's no pratical use for this beyond novelty and practice in utilizing APIs. This project utilizes the pokedex api https://pokeapi.co/.",
     url: "pokedex",
     viewable: true,
     accessText: "Navigate To Page"
    },
    {
     name:"OldSchool Runescape Calculator",
-    description: "This was a long term project that I developed through Excel. It never left prototype stage. It's purpose was to help calculate combat statistics during the game; according to a myriad of data points.",
+    description: "This was a long term project that I developed through Excel. Development began before I went to college for programming. It's been developed over many years; off-and-on. It never left prototype stage. It's purpose was to help calculate combat statistics during the game; according to a myriad of data points.",
     url: "OSRSCalc",
     viewable: false,
    },
@@ -22,8 +22,14 @@ export const PROJECTS: Project[] = [
    },
    {
     name:"Unnamed Survivor Game",
-    description: "This is my attempt at accomplishing a life-goal of mine: sell a video game. This project is a passion project meant to take a long time. ",
+    description: "This project is being built in the Godot Engine. It's a long-term project that is being done in collaboration with a friend who is an artist. The game will be of the Rogue-Like 'Survivor' genre.",
     url: "stormthehouseclone",
+    viewable: false,
+   },
+   {
+    name:"Legaia Move Manager",
+    description: "This was a quick program to help manage a complex system in a video game that my friend and I were playing through. It was designed to not just manage but develope the complexity of the 'attack moves'.",
+    url: "legaiamanager",
     viewable: false,
    },
 ]
