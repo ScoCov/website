@@ -1,7 +1,6 @@
 export interface Education {
-  institution: string,
-  degree_title: string,
-  degree_major?: string,
-  institution_location?: string,
-  gpa: number
+  institution?: string | null,
+  degree_title?: string | null,
+  degree_major?: string | null,
+  institution_location?: string | null,
 }
